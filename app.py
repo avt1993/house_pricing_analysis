@@ -137,7 +137,7 @@ def graphs(variable):
 #Use render_template to return the dashboard HTML site
 @app.route("/endpoint")
 def endpoint():
-    return (render_template('./API/templates/index.html'))
+    return (render_template('index.html'))
         
 #Run app code
 if __name__=="__main__":
