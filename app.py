@@ -10,7 +10,7 @@ import pandas as pd
 app = Flask(__name__, template_folder = 'API/templates')
 
 # Read austin housing reduced CSV into df dataFrame
-df=pd.read_csv("./Resources/austin_housing_reduced.csv")
+df=pd.read_csv("Resources/austin_housing_reduced.csv")
 
 # create geojson from dataframe
 def geo_from_df(data):
@@ -120,7 +120,7 @@ def unique(column):
 
 @app.route("/linearModel")
 def linear():
-    with open("./Resources/linear.json","r") as file:
+    with open("Resources/linear.json","r") as file:
         linear=jsonify(json.load(file))
         return linear
 
