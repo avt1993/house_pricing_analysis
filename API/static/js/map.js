@@ -11,7 +11,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 function mapQuery(queries=""){
     let URL_geo;
     if (queries==""){
-        URL_geo="http://127.0.0.1:5000/geo";
+        URL_geo="/geo";
     } else {
         let query="";
         queries.forEach(one=>{
