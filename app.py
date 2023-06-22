@@ -11,7 +11,7 @@ app = Flask(__name__)
 #server = app.server
 
 # Read austin housing reduced CSV into df dataFrame
-df=pd.read_csv("../Resources/austin_housing_reduced.csv")
+df=pd.read_csv("Resources/austin_housing_reduced.csv")
 
 # create geojson from dataframe
 def geo_from_df(data):
