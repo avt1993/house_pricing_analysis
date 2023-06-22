@@ -7,7 +7,7 @@ import pandas as pd
 # import tensorflow as tf
 
 # Define app to run api using Flask
-app = Flask(__name__)
+app = Flask(__name__, template_folder = 'API/templates')
 
 # Read austin housing reduced CSV into df dataFrame
 df=pd.read_csv("./Resources/austin_housing_reduced.csv")
