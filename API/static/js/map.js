@@ -1,7 +1,7 @@
 var map = L.map('map',{zoomControl:false}).setView([30.3077609,-97.7557424],12);
 var markers;
 new L.Control.Zoom({ position: 'topright' }).addTo(map);
-mapQuery();
+// mapQuery();
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -11,13 +11,14 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 function mapQuery(queries=""){
     let URL_geo;
     if (queries==""){
-        URL_geo="http://127.0.0.1:5000/geo";
+        URL_geo="https://house-pricing-analysis.onrender.com/geo";
     } else {
         let query="";
         queries.forEach(one=>{
             query=query+one+"_"
         })
-        URL_geo=`http://127.0.0.1:5000/geoquery/${query}`
+        URL_geo=`https://house-pricing-analysis.onrender.com/geoquery/${query}`;
+        console.log(URL_geo);
     };
     d3.json(URL_geo).then(data=>{
     let features=data["features"];
