@@ -11,7 +11,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 function mapQuery(queries=""){
     let URL_geo;
     if (queries==""){
-        URL_geo="/geo";
+        URL_geo="https://house-pricing-analysis.onrender.com/geo";
     } else {
         let query="";
         queries.forEach(one=>{
