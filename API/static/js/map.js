@@ -17,7 +17,7 @@ function mapQuery(queries=""){
         queries.forEach(one=>{
             query=query+one+"_"
         })
-        URL_geo=`http://127.0.0.1:5000/geoquery/${query}`
+        URL_geo=`https://house-pricing-analysis.onrender.com/geoquery/${query}`
     };
     d3.json(URL_geo).then(data=>{
     let features=data["features"];
