@@ -53,12 +53,12 @@ def home():
     return \
     """
     <b>To Website:</b><br>
-    <a href='http://127.0.0.1:5000/endpoint'>Austin Housing Prices</a><br>
+    <a href='/endpoint'>Austin Housing Prices</a><br>
     <br>
     <b>To API:</b><br>
-    <a href='http://127.0.0.1:5000/geo'>GeoJSON</a><br>
-    <a href='http://127.0.0.1:5000/unique/zipcode'>Unique values</a> (Ex: zipcode)<br>
-    <a href='http://127.0.0.1:5000/linearModel'>Linear Model Coefficients and intersection</a><br>
+    <a href='/geo'>GeoJSON</a><br>
+    <a href='/unique/zipcode'>Unique values</a> (Ex: zipcode)<br>
+    <a href='/linearModel'>Linear Model Coefficients and intersection</a><br>
     """
 
 #Retrieve geojson
