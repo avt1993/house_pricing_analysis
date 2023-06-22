@@ -120,7 +120,7 @@ def unique(column):
 
 @app.route("/linearModel")
 def linear():
-    with open("../Resources/linear.json","r") as file:
+    with open("./Resources/linear.json","r") as file:
         linear=jsonify(json.load(file))
         return linear
 
