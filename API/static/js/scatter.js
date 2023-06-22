@@ -23,7 +23,7 @@ Plotly.newPlot('graphs', scatterData,Layout);
 };
 function scatter(independent) {
   // getting information from the different APIS depending on the option chosen in dropdown menu
-      var URL=`http://127.0.0.1:5000/graphs/${independent}`;      
+      var URL=`https://house-pricing-analysis.onrender.com/graphs/${independent}`;      
       d3.json(URL).then(data=>{
         console.log(data["x"]);
         grapher(data);
