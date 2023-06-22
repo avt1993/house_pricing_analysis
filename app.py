@@ -8,7 +8,7 @@ import pandas as pd
 
 # Define app to run api using Flask
 app = Flask(__name__)
-server = app.server
+#server = app.server
 
 # Read austin housing reduced CSV into df dataFrame
 df=pd.read_csv("../Resources/austin_housing_reduced.csv")
